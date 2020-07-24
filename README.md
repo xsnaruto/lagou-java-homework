@@ -2,11 +2,11 @@
 
 ## 课程作业目录结构  
 1. 第一阶段：[JavaSE](/level_01/)
-    1. 模块一：Java 语言基础
-    2. 模块二：Java 面向对象编程
-    3. 模块三：Java 核心类库（上）
-    4. 模块四：Java 核心类库（下）
-    5. 模块五：Java 新特性和项目
+    1. 模块一：[Java 语言基础](/level_01/module_01)
+    2. 模块二：[Java 面向对象编程](/level_01/module_02)
+    3. 模块三：[Java 核心类库（上）](/level_01/module_03)
+    4. 模块四：[Java 核心类库（下）](/level_01/module_04)
+    5. 模块五：[Java 新特性和项目](/level_01/module_05)
 
 2. 第二阶段：数据库技术
 	1. 模块一：MySQL 数据库

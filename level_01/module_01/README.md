@@ -6,12 +6,12 @@
 
 -----
 
-1. 根据年月日计算总天数；   [YearMonthDay](https://gitee.com/xsnaruto/lagou-java-course-document/tree/master/Document/HomeWork/L01-M01/YearMonthDay){:target="_blank"}
-2. 计算并打印 1000 以内的所有完数； [PerfectNumber](https://gitee.com/xsnaruto/lagou-java-course-document/tree/master/Document/HomeWork/L01-M01/PerfectNumber){:target="_blank"}
-3. 使用随机数模拟双色球开奖；   [LotteryDemo](https://gitee.com/xsnaruto/lagou-java-course-document/tree/master/Document/HomeWork/L01-M01/LotteryDemo){:target="_blank"}
-4. 自定义规则进行数组扩容； [DilatationArray](https://gitee.com/xsnaruto/lagou-java-course-document/tree/master/Document/HomeWork/L01-M01/DilatationArray){:target="_blank"}
-5. 使用二维数组打印五子棋棋盘； [GobangBoard](https://gitee.com/xsnaruto/lagou-java-course-document/tree/master/Document/HomeWork/L01-M01/GobangBoard){:target="_blank"}
+1. 根据年月日计算总天数；   [YearMonthDay](/level_01/module_01/YearMonthDay){target="_blank"}
+2. 计算并打印 1000 以内的所有完数； [PerfectNumber](/level_01/module_01/PerfectNumber){target="_blank"}
+3. 使用随机数模拟双色球开奖；   [LotteryDemo](/level_01/module_01/LotteryDemo){target="_blank"}
+4. 自定义规则进行数组扩容； [DilatationArray](/level_01/module_01/DilatationArray){target="_blank"}
+5. 使用二维数组打印五子棋棋盘； [GobangBoard](/level_01/module_01/GobangBoard){target="_blank"}
 
 -----
 
-作业解说录屏文件：[https://1drv.ms/v/s!AoPh1jAMjyzdnS1F8B8Iv4rZ_3AB?e=HhAH9c](https://1drv.ms/v/s!AoPh1jAMjyzdnS1F8B8Iv4rZ_3AB?e=HhAH9c){:target="_blank"}
+作业解说录屏文件：[https://1drv.ms/v/s!AoPh1jAMjyzdnS1F8B8Iv4rZ_3AB?e=HhAH9c](https://1drv.ms/v/s!AoPh1jAMjyzdnS1F8B8Iv4rZ_3AB?e=HhAH9c){target="_blank"}

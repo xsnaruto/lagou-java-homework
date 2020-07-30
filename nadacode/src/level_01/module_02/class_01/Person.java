@@ -1,3 +1,5 @@
+package level_01.module_02.class_01;
+
 public class Person {
     // 数据类型 成员变量名 = 初始值; - 其中 = 初始值 通常都省略不写;
     String name;
@@ -70,12 +72,12 @@ public class Person {
         p.showArg();
         p.showArg("张三");
         p.showArg("李四", "王五");
-        
+
         System.out.println("---------------------------");
         // 通过成员方法调用实现成员变量数值的获取并打印 
         String str1 = p.getName();
         System.out.println("获取到的名字是：" + str1);
         int int1 = p.getAge();
-        System.out.println("获取到的年龄是："+ int1);
+        System.out.println("获取到的年龄是：" + int1);
     }
 }

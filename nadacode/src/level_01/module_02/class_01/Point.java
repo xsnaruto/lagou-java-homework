@@ -1,6 +1,4 @@
-/*
-    编程实现 Point 类的定义
-*/
+package level_01.module_02.class_01;
 
 /**
  * Point

@@ -1,4 +1,4 @@
-package TempTest;
+package level_01.module_02.TempTest;
 
 public class Game {
     public void start() {

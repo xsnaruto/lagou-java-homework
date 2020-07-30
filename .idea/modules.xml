@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/homework/homework.iml" filepath="$PROJECT_DIR$/homework/homework.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/lagou-java-homework.iml" filepath="$PROJECT_DIR$/.idea/lagou-java-homework.iml" />
       <module fileurl="file://$PROJECT_DIR$/level_01/level_01.iml" filepath="$PROJECT_DIR$/level_01/level_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nadacode/nadacode.iml" filepath="$PROJECT_DIR$/nadacode/nadacode.iml" />
       <module fileurl="file://$PROJECT_DIR$/notecode/notecode.iml" filepath="$PROJECT_DIR$/notecode/notecode.iml" />
     </modules>
   </component>

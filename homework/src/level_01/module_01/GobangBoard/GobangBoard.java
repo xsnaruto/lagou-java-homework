@@ -1,3 +1,5 @@
+package level_01.module_01.GobangBoard;
+
 /**
  * 使用二维数组和循环实现五子棋游戏棋盘的绘制
  */

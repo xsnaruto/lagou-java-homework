@@ -1,4 +1,4 @@
-
+package level_01.module_01.DilatationArray;
 /**
  * 自定义数组扩容规则
  * 当已存储元素数量达到总容量的 80%时，扩容 1.5 倍。

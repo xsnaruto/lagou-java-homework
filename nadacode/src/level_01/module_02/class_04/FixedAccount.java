@@ -1,11 +1,11 @@
-package nadacode.task09;
+package level_01.module_02.class_05;
 
 public class FixedAccount extends Account {
 
     public FixedAccount(){}
-    public FixedAccount(int i) {
-        super(i); // 表示调用父类的有参构造方法
-    }
+//    public FixedAccount(int i) {
+//        super(i); // 表示调用父类的有参构造方法
+//    }
 
     @Override
     public double getLixi() {

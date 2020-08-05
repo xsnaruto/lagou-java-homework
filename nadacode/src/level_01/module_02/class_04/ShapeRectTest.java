@@ -1,4 +1,4 @@
-package nadacode.task09;
+package level_01.module_02.class_05;
 
 public class ShapeRectTest {
     public static void main(String[] args) {

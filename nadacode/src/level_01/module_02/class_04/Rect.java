@@ -1,4 +1,4 @@
-package nadacode.task09;
+package level_01.module_02.class_05;
 
 public class Rect extends Shape {
     private int len;

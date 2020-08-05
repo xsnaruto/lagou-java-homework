@@ -1,16 +1,15 @@
+package MutiClass;
+
 import java.util.Random;
 import java.util.Scanner;
 
 /**
- * 创建 Client 类，包括信息：新建二维数组
- * 包含方法：lastMove 展示上一回合执行的动作信息，checkWin 检查是否获胜，main 根据游戏顺序执行语句
- * 实现步骤：
- * 1. 五子棋游戏的初始化，创建二维数组，创建新的五子棋盘对象并初始化棋盘内容；
- * 2. 通过 Player 类分别创建 2 个玩家对象，提示玩家录入姓名，并给玩家赋值 ID；
- * 3. 通过引入随机数，随机选择一个玩家开始五子棋游戏；
- * 4. 提示玩家录入棋盘坐标信息，更改二维数组内的元素内容，再调用 GobangBoard 类中的方法将更新后的棋盘信息打印出来；
- * 5. 使用 checkWin 成员方法，再每次落子动作后进行游戏的胜负判断，通过 boolean 类型判定是否有人胜出；
- * 6. checkWin 判断结果为 false 时，不进行任何输出，直到结果为 true，打印胜出者信息，然后结束程序。
+ * 创建 Client 类，包括信息：新建二维数组 包含方法：lastMove 展示上一回合执行的动作信息，checkWin 检查是否获胜，main
+ * 根据游戏顺序执行语句 实现步骤： 1. 五子棋游戏的初始化，创建二维数组，创建新的五子棋盘对象并初始化棋盘内容； 2. 通过 Player 类分别创建 2
+ * 个玩家对象，提示玩家录入姓名，并给玩家赋值 ID； 3. 通过引入随机数，随机选择一个玩家开始五子棋游戏； 4.
+ * 提示玩家录入棋盘坐标信息，更改二维数组内的元素内容，再调用 GobangBoard 类中的方法将更新后的棋盘信息打印出来； 5. 使用 checkWin
+ * 成员方法，再每次落子动作后进行游戏的胜负判断，通过 boolean 类型判定是否有人胜出； 6. checkWin 判断结果为 false
+ * 时，不进行任何输出，直到结果为 true，打印胜出者信息，然后结束程序。
  */
 public class Client {
 
@@ -63,7 +62,6 @@ public class Client {
             a1 = xNum - 4;
             z1 = xNum + 4;
         }
-
 
         // 横向和纵向的连子判定
         for (int i = a1; i <= z1; i++) {
@@ -169,7 +167,7 @@ public class Client {
 
         Player p1 = new Player(); // 创建一个 Player 对象 p1
         System.out.print("玩家 1 请输入姓名："); // 提示玩家输入姓名
-        p1.setName(sc.nextLine());  // 将玩家输入的姓名内容传递给 p1 的 name 变量
+        p1.setName(sc.nextLine()); // 将玩家输入的姓名内容传递给 p1 的 name 变量
         p1.setId(1); // 默认给 p1 玩家赋值 ID 为 1
 
         Player p2 = new Player(); // 创建一个 Player 对象 p2
@@ -233,6 +231,6 @@ public class Client {
             } while (true); // 结束用户选择
 
         } while (choice); // 结束游戏
-
+        sc.close();
     }
 }

@@ -90,7 +90,7 @@ public class SingleGobangGame {
             // 如果用户输入的字母是小写字母，通过 if 语句判定后进行转换
             if (x.charAt(0) >= 'a' && x.charAt(0) <= 'z') { // 如果 x 是小写字母，将其指向大写字母对应的坐标；
                 xNum = x.charAt(0) - 96; // 如果字母是小写字母，减去 96 获得对应的数字坐标位置
-                x = x.toUpperCase(); //  将小写字母转为大写字母，并赋值给 x，方便 Client 类中 lastMove 方法调用打印时展现更美观
+                x = x.toUpperCase(); // 将小写字母转为大写字母，并赋值给 x，方便 Client 类中 lastMove 方法调用打印时展现更美观
             } else if (x.charAt(0) >= 'A' && x.charAt(0) <= 'z') {
                 xNum = x.charAt(0) - 64; // 如果字母是小写字母，减去 96 获得对应的数字坐标位置
             } else { // 如果不是大写字母也不是小写字母，提示输入错误，跳回循环起点重新开始输入
@@ -121,7 +121,6 @@ public class SingleGobangGame {
         } while (true);
 
         System.out.println("--------------------------------------");
-//        return boardMap;
     }
 
     // 游戏过程中打印玩家的信息
@@ -133,7 +132,7 @@ public class SingleGobangGame {
     // 打印上一步玩家落子位置
     public static void lastMove(String name, String x, int yNum) {
         // 每执行一次 move 之后，调用一次 showBoard 方法，用来更新棋盘
-        System.out.printf("%s 上一步的落子位置为：%s%d，下一位请落子。\n", name, x, yNum);
+        System.out.printf("%s 上一步的落子位置为：%s%d\n", name, x, yNum);
         System.out.println("--------------------------------------");
     }
 
@@ -169,17 +168,16 @@ public class SingleGobangGame {
             z1 = xNum + 4;
         }
 
-
         // 横向的连子判定
         for (int i = a1; i <= z1; i++) {
             if (boardMap[yNum][i] == id) { // 判定如果棋盘坐标的元素内容是否等于玩家的 id
                 c++; // 如果元素内容等于玩家的 id，变量 c 自增，累加连子次数
                 if (c > 4) {
                     return true;
-                } else if (warningFunc.equals("y") && c == 4 && (i == 4 | i == 16)) { // 当有一颗子处于棋盘边缘的同时，已经有 4 颗子连线的时候，提供提示
+                } else if (warningFunc.equals("y") && c == 4 && (i == 4 || i == 16 || boardMap[yNum][i - 3] == 0 || boardMap[yNum][i + 1] == 0)) { // 存在 4 子连线同时有一侧为未落子的状态，发送提示
                     System.out.println("㊟ 注意：已经存在四子连成线了哦！");
                     System.out.println("--------------------------------------");
-                } else if (warningFunc.equals("y") && c == 3 && boardMap[yNum][i - 3] == 0 && boardMap[yNum][i + 1] == 0) { // 当存在三子连线，同时两端都为未落子的状态，发送提示
+                } else if (warningFunc.equals("y") && c == 3 && boardMap[yNum][i - 3] == 0 && boardMap[yNum][i + 1] == 0) { // 当存在三子连线，同时两侧都为未落子的状态，发送提示
                     System.out.println("㊟ 注意：可能有风险的三子连成线咯！");
                     System.out.println("--------------------------------------");
                 }
@@ -189,21 +187,21 @@ public class SingleGobangGame {
         }
 
         // 纵向连子判定
-        c = 0; // 执行判定前将 c 清零，避免循环尾部带入的自增数值
+        c = 0; // 执行判定前将 c 清零，避免上一个循环的尾部带入的自增数值
         for (int i = a2; i <= z2; i++) {
             if (boardMap[i][xNum] == id) {
                 c++;
                 if (c > 4) {
                     return true;
-                } else if (warningFunc.equals("y") && c == 4 && (i == 4 || i == 16)) {
+                } else if (warningFunc.equals("y") && c == 4 && (i == 4 || i == 16 || boardMap[i - 3][xNum] == 0 || boardMap[i + 1][xNum] == 0)) {
                     System.out.println("㊟ 注意：已经存在四子连成线了哦！");
                     System.out.println("--------------------------------------");
                 } else if (warningFunc.equals("y") && c == 3 && boardMap[i - 3][xNum] == 0 && boardMap[i + 1][xNum] == 0) {
                     System.out.println("㊟ 注意：可能有风险的三子连成线咯！");
                     System.out.println("--------------------------------------");
-                } else {
-                    c = 0;
                 }
+            } else {
+                c = 0;
             }
         }
 
@@ -211,14 +209,14 @@ public class SingleGobangGame {
         c = 0; // 执行判定前将 c 清零，避免循环尾部带入的自增数值
         for (int i = a2; i <= z2; i++) { // 避免上下越界
             int xy = yNum - xNum; // 使用变量 xy 计算 yNum 和 xNum 之间的关系
-            if (i - xy <= 16 & i - xy > 0) { // 判断数组纵坐标是否在范围内，如果不是的话，不执行语句
+            if (i - xy <= 16 & i - xy >= 0) { // 判断数组纵坐标是否在范围内，如果不是的话，不执行语句
                 if (boardMap[i][i - xy] == id) {
                     c++;
                     if (c > 4) {
                         return true;
-                    } else {
-                        c = 0;
                     }
+                } else {
+                    c = 0;
                 }
             }
         }
@@ -289,7 +287,7 @@ public class SingleGobangGame {
         Scanner sc = new Scanner(System.in); // 创建扫描器接收用户输入信息
 
         System.out.print("玩家 1 请输入姓名："); // 提示玩家输入姓名
-        name1 = sc.nextLine();  // 将玩家输入的姓名内容传递给 p1 的 name 变量
+        name1 = sc.nextLine(); // 将玩家输入的姓名内容传递给 p1 的 name 变量
         id1 = 1; // 默认给 p1 玩家赋值 ID 为 1
 
         System.out.print("玩家 2 请输入姓名："); // 提示玩家输入姓名

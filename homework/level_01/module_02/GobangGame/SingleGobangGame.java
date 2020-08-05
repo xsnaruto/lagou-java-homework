@@ -120,6 +120,8 @@ public class SingleGobangGame {
             }
         } while (true);
 
+        sc.close();
+
         System.out.println("--------------------------------------");
     }
 
@@ -362,7 +364,8 @@ public class SingleGobangGame {
             } while (true); // 结束用户选择
 
         } while (choice); // 结束游戏
-
+        
+        sc.close();
     }
 
 }

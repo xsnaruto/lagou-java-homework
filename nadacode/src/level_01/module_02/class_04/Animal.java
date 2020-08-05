@@ -1,4 +1,4 @@
-package nadacode.task08;
+package level_01.module_02.class_04;
 
 public class Animal {
     private String name;

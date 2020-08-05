@@ -1,4 +1,4 @@
-package level_01.module_02.class_05;
+package level_01.module_02.class_04;
 
 public abstract class Account {
     private int money;

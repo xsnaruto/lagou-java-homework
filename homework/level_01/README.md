@@ -1,7 +1,7 @@
 # 个人拉勾 JAVA 课程作业和笔记
 
 ## 课程作业目录结构  
-1. 第一阶段：[JavaSE](/homework/level_01/)
+1. 第一阶段：JavaSE
     1. 模块一：[Java 语言基础](/homework/level_01/module_01)
     2. 模块二：[Java 面向对象编程](/homework/level_01/module_02)
     3. 模块三：[Java 核心类库（上）](/homework/level_01/module_03)

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bec471e3-be24-49e2-9813-744f370ad97a" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/level01_module02/MobilePhone/src/Module_1_BasicClass/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/level01_module02/MobilePhone/src/Module_2_CardTypeEnum/CardTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/level01_module02/MobilePhone/src/Module_3_Abstract/SubCallCost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/level01_module02/MobilePhone/src/Module_3_Abstract/SubDataCost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/level01_module02/MobilePhone/src/Module_4_Interface/CallInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/level01_module02/MobilePhone/src/Module_4_Interface/CallInterfaceUse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/level01_module02/MobilePhone/src/Module_4_Interface/DataInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/level01_module02/MobilePhone/src/Module_4_Interface/DataInterfaceUse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/level01_module02/MobilePhone/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level01_module02/src/ArraysAdd/ArraysAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/level01_module02/ArrayAdd/src/ArraysAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level01_module02/src/GobangBoard/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/level01_module02/GobangGame/src/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level01_module02/src/GobangBoard/SingleGobangGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/level01_module02/GobangGame/src/SingleGobangGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level01_module02/src/MobilePhone/Module_1_BasicClass/DataPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/level01_module02/MobilePhone/src/Module_1_BasicClass/DataPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level01_module02/src/MobilePhone/Module_1_BasicClass/PhonePlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/level01_module02/MobilePhone/src/Module_1_BasicClass/PhonePlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level01_module02/src/MobilePhone/Module_1_BasicClass/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/level01_module02/MobilePhone/src/Module_1_BasicClass/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level01_module02/src/MobilePhone/Module_2_CardTypeEnum/Card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/level01_module02/src/MobilePhone/Module_2_CardTypeEnum/CardTypeEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/level01_module02/src/MobilePhone/Module_3_Abstract/CostAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/level01_module02/MobilePhone/src/Module_3_Abstract/CostAbstract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level01_module02/src/MobilePhone/Module_4_Interface/CallInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/level01_module02/src/MobilePhone/Module_4_Interface/DataInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/level01_module02/src/MobilePhone/Test.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fjF0r4jAuF2blhvrOwIh25CeDY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="新增" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/新建临时文件" value="JAVA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/level01_module02/src/GobangBoard" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/level01_module02/GobangGame/src" />
+      <recent name="$PROJECT_DIR$/level01_module02/src" />
+      <recent name="$PROJECT_DIR$/level01_module01/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/level01_module02/src/GobangBoard" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.Test">
+    <configuration name="ArraysAdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArraysAdd" />
+      <module name="ArrayAdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DilatationArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DilatationArray.DilatationArray" />
+      <module name="level01_module01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DilatationArray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleGobangGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SingleGobangGame" />
+      <module name="GobangGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="MobilePhone" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Test" />
+        <item itemvalue="应用程序.SingleGobangGame" />
+        <item itemvalue="应用程序.ArraysAdd" />
+        <item itemvalue="应用程序.DilatationArray" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bec471e3-be24-49e2-9813-744f370ad97a" name="默认的" comment="" />
+      <created>1596723375658</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596723375658</updated>
+      <workItem from="1596723378253" duration="29405000" />
+      <workItem from="1596824316456" duration="9121000" />
+      <workItem from="1596836745882" duration="574000" />
+      <workItem from="1596837414517" duration="1094000" />
+      <workItem from="1596838586501" duration="316000" />
+      <workItem from="1596838936506" duration="3147000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="633" y="351" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1596832698097">
+      <screen x="0" y="25" width="1792" height="1011" />
+    </state>
+    <state x="633" y="351" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.25.1792.1011@0.25.1792.1011" timestamp="1596832698097" />
+    <state x="709" y="218" key="#com.intellij.ide.util.MemberChooser" timestamp="1596833418060">
+      <screen x="0" y="25" width="1792" height="1011" />
+    </state>
+    <state x="709" y="218" key="#com.intellij.ide.util.MemberChooser/0.25.1792.1011@0.25.1792.1011" timestamp="1596833418060" />
+    <state x="587" y="244" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596838415583">
+      <screen x="0" y="25" width="1792" height="1011" />
+    </state>
+    <state x="587" y="244" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.25.1792.1011@0.25.1792.1011" timestamp="1596838415583" />
+    <state width="1750" height="390" key="GridCell.Tab.0.bottom" timestamp="1596872945098">
+      <screen x="0" y="25" width="1792" height="1011" />
+    </state>
+    <state width="1750" height="390" key="GridCell.Tab.0.bottom/0.25.1792.1011@0.25.1792.1011" timestamp="1596872945098" />
+    <state width="1750" height="390" key="GridCell.Tab.0.center" timestamp="1596872945097">
+      <screen x="0" y="25" width="1792" height="1011" />
+    </state>
+    <state width="1750" height="390" key="GridCell.Tab.0.center/0.25.1792.1011@0.25.1792.1011" timestamp="1596872945097" />
+    <state width="1750" height="390" key="GridCell.Tab.0.left" timestamp="1596872945097">
+      <screen x="0" y="25" width="1792" height="1011" />
+    </state>
+    <state width="1750" height="390" key="GridCell.Tab.0.left/0.25.1792.1011@0.25.1792.1011" timestamp="1596872945097" />
+    <state width="1750" height="390" key="GridCell.Tab.0.right" timestamp="1596872945098">
+      <screen x="0" y="25" width="1792" height="1011" />
+    </state>
+    <state width="1750" height="390" key="GridCell.Tab.0.right/0.25.1792.1011@0.25.1792.1011" timestamp="1596872945098" />
+    <state x="752" y="165" key="SettingsEditor" timestamp="1596870417246">
+      <screen x="0" y="25" width="1792" height="1011" />
+    </state>
+    <state x="752" y="165" key="SettingsEditor/0.25.1792.1011@0.25.1792.1011" timestamp="1596870417246" />
+    <state x="375" y="232" key="VCS.ChangeListViewerDialog" timestamp="1596833841334">
+      <screen x="0" y="25" width="1792" height="1011" />
+    </state>
+    <state x="375" y="232" key="VCS.ChangeListViewerDialog/0.25.1792.1011@0.25.1792.1011" timestamp="1596833841334" />
+    <state x="431" y="150" key="new project wizard" timestamp="1596834461797">
+      <screen x="0" y="25" width="1792" height="1011" />
+    </state>
+    <state x="431" y="150" key="new project wizard/0.25.1792.1011@0.25.1792.1011" timestamp="1596834461797" />
+  </component>
+</project>

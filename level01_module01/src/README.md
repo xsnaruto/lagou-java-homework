@@ -14,5 +14,5 @@
 
 作业解说录屏文件：
 * ~~奶牛快传~~
-* [OneDrive](https://1drv.ms/v/s!AoPh1jAMjyzdnS1F8B8Iv4rZ_3AB?e=BEoQ57)
 * ~~iCloud Drive~~
+* [Google Drive](https://drive.google.com/file/d/10NvSxaAB29m4g5uT3VvI85wOzqErxy8i/view?usp=sharing)

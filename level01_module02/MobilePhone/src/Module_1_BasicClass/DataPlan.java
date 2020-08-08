@@ -8,32 +8,18 @@ public class DataPlan {
     private int dataUse; // 上网流量
     private int dataMoBill; // 流量月账单金额
 
-    /**
-     * @return the dataUse
-     */
     public int getDataUse() {
         return dataUse;
     }
-
-    /**
-     * @param dataUse the dataUse to set
-     */
     public void setDataUse(int dataUse) {
         this.dataUse = dataUse;
     }
 
-    /**
-     * @return the moBill
-     */
-    public int getMoBill() {
-        return moBill;
+    public int getDataMoBill() {
+        return dataMoBill;
     }
-
-    /**
-     * @param moBill the moBill to set
-     */
-    public void setMoBill(int moBill) {
-        this.moBill = moBill;
+    public void setDataMoBill(int dataMoBill) {
+        this.dataMoBill = dataMoBill;
     }
 
     public void showDataInfo() {

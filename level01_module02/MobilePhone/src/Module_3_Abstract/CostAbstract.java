@@ -6,9 +6,17 @@ package MobilePhone.Module_3_Abstract;
  * 相同的行为有：打印套餐信息；
  */
 public abstract class CostAbstract{
-    private int cost; // 月消费金额
+    private double cost; // 月消费金额
 
-    public showInfo(){ // 打印月消费金额
+    public void showInfo(){ // 打印月消费金额
         System.out.printf("当月消费金额为：%d\n", cost);
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
     }
 }

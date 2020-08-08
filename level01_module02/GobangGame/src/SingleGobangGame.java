@@ -5,11 +5,12 @@ import java.util.Scanner;
 
 /**
  * SingleGobangGame.java
- * 五子棋游戏，
  */
 public class SingleGobangGame {
 
-    /** 玩家资料的记录 */
+    /**
+     * 记录游戏中部分信息
+     */
     static String name1; // 玩家1姓名
     static String name2; // 玩家2姓名
     static int id1; // 玩家1 ID
@@ -19,15 +20,19 @@ public class SingleGobangGame {
     static int winTimes1 = 0; // 玩家1获胜次数
     static int winTimes2 = 0; // 玩家2获胜次数
 
-    
+
     static String x; // 记录玩家落子的 x 字母坐标
     static int xNum; // 记录玩家落子的 x 数字坐标
     static int yNum; // 记录玩家落子的 y 数字坐标
-    
+
     static String warningFunc; // 记录是否开启连子提示功能
     static int[][] boardMap = new int[17][17]; // 用于记录棋盘信息的二维数组
 
-    // 初始化棋盘
+    /**
+     * 初始化记录游戏棋盘信息的二维数组
+     *
+     * @param boardMap 记录棋盘信息的二维数组
+     */
     public SingleGobangGame(int[][] boardMap) {
         for (int i = 0; i < boardMap.length; i++) {
             for (int j = 0; j < boardMap.length; j++) {
@@ -43,14 +48,12 @@ public class SingleGobangGame {
     }
 
 
-
     /**
-     * 棋盘的打印，通过传入的「棋盘二维数组」信息，以及「局数」进行棋盘打印
-     * @param boardMap 包含棋盘信息的二维数组
-     * @param fullFullRound 记录局数的变量
+     * @param boardMap      记录棋盘信息的二维数组
+     * @param fullFullRound 记录游戏局数
      */
     public void showBoard(int[][] boardMap, int fullFullRound) {
-        System.out.printf("\t五子棋：第 %d 回合\t\n", fullFullRound);
+        System.out.printf("\t\t五子棋：第 %d 回合\t\t\n", fullFullRound);
         System.out.println("--------------------------------------");
         for (int i = 0; i < boardMap.length; i++) {
             System.out.print(" "); // 为了打印美观，五子棋盘每行前添加两个空格
@@ -80,22 +83,20 @@ public class SingleGobangGame {
     }
 
 
-
-
-
     /**
-     * 落子操作，提示玩家输入落子的坐标信息，并赋值给五子棋盘的二维数组
-     * @param boardMap 五子棋盘二维数组
-     * @param id 玩家的 id，用于在二维数组中记录对应玩家的棋子
+     * 用于执行落子操作的动作
+     *
+     * @param boardMap 记录棋盘信息的二维数组
+     * @param id 记录玩家 id
      */
     public static void move(int[][] boardMap, int id) {
-        Scanner sc = new Scanner(System.in); // 创建扫描器记录玩家键盘录入内容
-        // 创建一个 String 类型的变量 strLocation 用来接收用户输入的坐标信息
-        String strLocation;
 
         do {
+            Scanner sc = new Scanner(System.in); // 创建扫描器记录玩家键盘录入内容
             System.out.print("请输入落子坐标（不区分大小写和横纵坐标输入顺序）：");
-            strLocation = sc.nextLine(); // 接收用户输入的坐标信息
+            // 创建一个 String 类型的变量 strLocation 用来接收用户输入的坐标信息
+            String strLocation = sc.next(); // 接收用户输入的坐标信息
+            System.out.println(strLocation);
 
             // 开始判定字母坐标
             if (strLocation.replaceAll("[^A-Za-z]", "").equals("")) { // 如果用户输入的内容没有字母，执行完 replaceAll 之后就没有没有内容了，如果 equals 空内容""成立，就提示错误，重新开始循环
@@ -136,14 +137,12 @@ public class SingleGobangGame {
                 count1++; // 通过 count 自增的方法，统计对应玩家的落子次数
                 break; // 以上左右步骤没有问题的情况下才会跳出循环
             }
+            sc.close();
         } while (true);
 
-        sc.close();
 
         System.out.println("--------------------------------------");
     }
-
-
 
 
     /**
@@ -155,14 +154,11 @@ public class SingleGobangGame {
     }
 
 
-
-
-
-
     /**
-     * 打印上一步玩家落子位置
-     * @param name  玩家姓名
-     * @param x 玩家落子的字母坐标
+     * 打印上一步落子的「玩家姓名」以及「落子位置」
+     *
+     * @param name 玩家姓名
+     * @param x    玩家落子的字母坐标
      * @param yNum 玩家落子的数字坐标
      */
     public static void lastMove(String name, String x, int yNum) {
@@ -172,17 +168,15 @@ public class SingleGobangGame {
     }
 
 
-
-
     /**
      * 检测棋子连线状态，包括五子连线检测以及横、纵方向的落子提示
-     * 
-     * @param boardMap 五子棋的二维数组
+     *
+     * @param boardMap    五子棋的二维数组
      * @param warningFunc 记录玩家是否开启落子提示的变量
-     * @param id 代表玩家的 id 和 棋子
-     * @param xNum 落子位置的坐标
-     * @param yNum 落子位置的坐标
-     * @return 通过返回 true 或 false 判定是否有玩家获胜
+     * @param id          代表玩家的 id 和 棋子
+     * @param xNum        落子位置的坐标
+     * @param yNum        落子位置的坐标
+     * @return boolean  通过返回 true 或 false 判定是否有玩家获胜
      */
     public static boolean checkWin(int[][] boardMap, String warningFunc, int id, int xNum, int yNum) {
         int c = 0; // 创建一个变量 c 用来记录连子数
@@ -288,45 +282,47 @@ public class SingleGobangGame {
     }
 
 
-
-
-
-
     /**
      * 重复玩家落子动作，根据 main 方法中传入的玩家先后顺序来定义由谁先下第一颗子
-     * @param game 新建的本类对象
+     *
+     * @param game          新建的本类对象
      * @param fullFullRound 五子棋的局数记录
-     * @param boardMap 记录棋盘信息的二维数组
-     * @param nameA 玩家 A 的名字
-     * @param nameB 玩家 B 的名字
-     * @param idA 玩家 A 的 id
-     * @param idB 玩家 B 的 id
-     * @param countA 玩家 A 单局落子次数
-     * @param countB 玩家 B 单局落子次数
-     * @param winA 玩家 A 获胜的次数
-     * @param winB 玩家 B 获胜的次数
+     * @param boardMap      记录棋盘信息的二维数组
+     * @param nameA         玩家 A 的名字
+     * @param nameB         玩家 B 的名字
+     * @param idA           玩家 A 的 id
+     * @param idB           玩家 B 的 id
+     * @param countA        玩家 A 单局落子次数
+     * @param countB        玩家 B 单局落子次数
+     * @param winA          玩家 A 获胜的次数
+     * @param winB          玩家 B 获胜的次数
      * @return 返回记录两个玩家获胜次数的一维数组 allWinTime
      */
     public static int[] fullRound(SingleGobangGame game, int fullFullRound, int[][] boardMap, String nameA, String nameB, int idA, int idB, int countA, int countB, int winA, int winB) {
 
         int[] allWinTimes = new int[2];
         do {
-            move(boardMap, idA);
-            countA++;
-            game.showBoard(boardMap, fullFullRound);
-            lastMove(nameA, x, yNum);
+            move(boardMap, idA); // 调用 move 方法，执行对棋盘的二维数组内数据的变更
+            countA++; // 记录用户单局内的落子次数是
+            game.showBoard(boardMap, fullFullRound); // 调用 show 方法把二维数组的信息通过棋盘的方式打印出来
+            lastMove(nameA, x, yNum); // 打印上一个玩家的名字，以及他对应落子的位置
+
+            // 调用 checkWin 方法来检测是否有玩家胜利，如果返回值为 true，就会执行 if 语句里面的方法体
             if (checkWin(boardMap, warningFunc, idA, xNum, yNum)) {
                 System.out.println("--------------------------------------");
                 System.out.printf("五子连线啦，本局已结束，恭喜 %s 获胜！\n", nameA);
-                winA++;
-                allWinTimes[0] = winA;
+                winA++; // 当前玩家的获胜次数自增
+                allWinTimes[0] = winA; // 将玩家获胜次数在一维数组内进行赋值
                 allWinTimes[1] = winB;
-                return allWinTimes;
+                return allWinTimes; // 将获胜的次数的数据返回到外面，同时已经执行了 return 语句的话，当前方法也会结束
             }
-            showInfo();
+            showInfo(); // 如果 if 语句没有执行，就会继续执行 showInfo 在棋盘下面打印玩家的信息，
 
             System.out.println(); // 换行
 
+            /*
+            重复上面的执行步骤，将对应的参数从玩家 A 改成玩家 B
+             */
             move(boardMap, idB);
             countB++;
             game.showBoard(boardMap, fullFullRound);
@@ -338,18 +334,14 @@ public class SingleGobangGame {
                 allWinTimes[0] = winA;
                 allWinTimes[1] = winB;
                 return allWinTimes;
-                // System.exit(0);
             }
             showInfo();
             System.out.println(); // 换行
-        } while (true);
+        } while (true); // 无限循环当前语句，除非内部有 return
 
     }
 
 
-
-
-    
     public static void main(String[] args) {
         boolean choice; // 用来接收用户选择开始新游戏或者退出游戏的选择
         int fullFullRound = 0; // 统计局数
@@ -368,19 +360,22 @@ public class SingleGobangGame {
         do {
             System.out.print("是否需要开启横竖排的「危机警告」 y or n：");
             warningFunc = sc.nextLine();
-            if (warningFunc.equals("y") | warningFunc.equals("n")) {
+            if (warningFunc.equals("y") || warningFunc.equals("n")) {
                 break;
             } else {
                 System.out.println("输入错误，请重新输入");
             }
         } while (true);
 
+        /*
+        正式开始游戏
+         */
         do {
             // 使用 GobangBoard 类创建一个棋盘对象，同时传入新创建的二维数组，
             fullFullRound++;
             SingleGobangGame game = new SingleGobangGame(boardMap);
 
-            // 每局游戏开始的时候，玩家单局落子次数清零
+            // 每局游戏开始的时候，需要把之前的玩家的单局落子次数清零
             count1 = 0;
             count2 = 0;
 
@@ -391,15 +386,19 @@ public class SingleGobangGame {
 
             // 调用随机数工具选择第一个落子的人，然后开始正式下棋的方法，玩家轮流进行下棋操作
             Random ra = new Random(); // 创建随机数工具
-
             int firstPlayer = ra.nextInt(2) + 1;
 
-            int[] allWinTimes;
+            // 简单的长度为 2 的一维数组，用来记录两个玩家获胜的次数
+            int[] allWinTimes = new int[2];
+
+            // 通过随机数生成的数字来执行不同的操作
+            // 两种操作都是调用同样的 fullRound 方法，区别在于传参的时候玩家的顺序对调了
             if (firstPlayer == 1) {
                 allWinTimes = fullRound(game, fullFullRound, boardMap, name1, name2, id1, id2, count1, count2, winTimes1, winTimes2);
-            } else {
+            } else if (firstPlayer == 2) {
                 allWinTimes = fullRound(game, fullFullRound, boardMap, name2, name1, id2, id1, count2, count1, winTimes2, winTimes1);
             }
+
             winTimes1 = allWinTimes[0];
             winTimes2 = allWinTimes[1];
 
@@ -433,7 +432,7 @@ public class SingleGobangGame {
             } while (true); // 结束用户选择
 
         } while (choice); // 结束游戏
-        
+
         sc.close();
     }
 

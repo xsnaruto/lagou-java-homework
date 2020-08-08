@@ -1,11 +1,11 @@
 package MobilePhone.Module_1_BasicClass;
 
+import MobilePhone.Module_2_CardTypeEnum.CardTypeEnum;
+
 /**
  * 用户消费信息类 特征：统计通话、短信、流量信息，以及每月消费金额
  */
-public class UserInfo {
-    private String name;
-    private String number;
+public class User extends Card {
 
     private int callTime; // 通话时长
     private int messageNum; // 短信条数
@@ -13,115 +13,56 @@ public class UserInfo {
     private int moBill; // 月租
 
     /**
-     * 有参构造方法，创建新用户时，初始化客户可用的「通话时长」「短信条数」「数据流量」「月租」
-     * 
-     * @param callTime
-     * @param messageNum
-     * @param dataUse
-     * @param moBill
+     * 调用父类 Card 的构造方法初始化子类 User 的数据
+     *
+     * @param typeChoice 记录用户选择的卡类型
+     * @param number
+     * @param name
+     * @param username
+     * @param password
+     * @param balance
      */
-    public UserInfo(int callTime, int messageNum, int dataUse, int moBill) {
-        setCallTime(callTime);
-        setMessageNum(messageNum);
-        setDataUse(dataUse);
-        setMoBill(moBill);
+    public User(int typeChoice, String number, String name, String username, String password, double balance) {
+        super(typeChoice, number, name, username, password, balance);
     }
 
-    /**
-     * @return the callTime
-     */
+
     public int getCallTime() {
         return callTime;
     }
 
-    /**
-     * @param callTime the callTime to set
-     */
     public void setCallTime(int callTime) {
         this.callTime = callTime;
     }
 
-    /**
-     * @return the messageNum
-     */
     public int getMessageNum() {
         return messageNum;
     }
 
-    /**
-     * @param messageNum the messageNum to set
-     */
     public void setMessageNum(int messageNum) {
         this.messageNum = messageNum;
     }
 
-    /**
-     * @return the dataUse
-     */
     public int getDataUse() {
         return dataUse;
     }
 
-    /**
-     * @param dataUse the dataUse to set
-     */
     public void setDataUse(int dataUse) {
         this.dataUse = dataUse;
     }
 
-    /**
-     * @return the moBill
-     */
     public int getMoBill() {
         return moBill;
     }
 
-    /**
-     * @param moBill the moBill to set
-     */
     public void setMoBill(int moBill) {
         this.moBill = moBill;
-    }
-
-    public void showUserInfo() {
-        System.out.println("");
-    }
-
-    /**
-     * @return the name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * @param name the name to set
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    /**
-     * @return the number
-     */
-    public String getNumber() {
-        return number;
-    }
-
-    /**
-     * @param number the number to set
-     */
-    public void setNumber(String number) {
-        this.number = number;
     }
 
     /**
      * 用于打印用户的消费账单
      */
     public void showUserInfo() {
-        System.out.println("姓名：" + getName());
-        System.out.println("号码：" + getNumber());
-        System.out.println("--------------------");
         System.out.println("套餐通话时长：" + getCallTime() + "分钟");
         System.out.println("已用通话时长：" + getCallTime() + "分钟");
         System.out.println("--------------------");

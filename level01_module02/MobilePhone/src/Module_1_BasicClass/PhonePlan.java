@@ -8,46 +8,25 @@ public class PhonePlan {
     private static int messageNum; // 短信用量
     private static double callMoBill; // 通话月账单金额
 
-    /**
-     * @return the callTime
-     */
     public static int getCallTime() {
         return callTime;
     }
-
-    /**
-     * @param callTime the callTime to set
-     */
     public static void setCallTime(int callTime) {
         PhonePlan.callTime = callTime;
     }
 
-    /**
-     * @return the messageNum
-     */
     public static int getMessageNum() {
         return messageNum;
     }
-
-    /**
-     * @param messageNum the messageNum to set
-     */
     public static void setMessageNum(int messageNum) {
         PhonePlan.messageNum = messageNum;
     }
 
-    /**
-     * @return the moBill
-     */
-    public static double getMoBill() {
-        return moBill;
+    public static double getCallMoBill() {
+        return callMoBill;
     }
-
-    /**
-     * @param moBill the moBill to set
-     */
-    public static void setMoBill(double moBill) {
-        PhonePlan.moBill = moBill;
+    public static void setCallMoBill(double callMoBill) {
+        PhonePlan.callMoBill = callMoBill;
     }
 
     // 展示套餐信息

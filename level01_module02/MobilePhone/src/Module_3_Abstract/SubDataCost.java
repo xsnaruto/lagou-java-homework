@@ -1,6 +1,4 @@
-package MobilePhone.Module_3_Abstract;
-
-import MobilePhone.Module_1_BasicClass.User;
+package Module_3_Abstract;
 
 public class SubDataCost extends CostAbstract {
     private int dataUse; // 已使用的数据流量

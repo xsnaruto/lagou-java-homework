@@ -1,4 +1,4 @@
-package MobilePhone.Module_3_Abstract;
+package Module_3_Abstract;
 
 public class SubCallCost extends CostAbstract {
     private int callTime; // 通话时间

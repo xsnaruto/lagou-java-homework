@@ -1,4 +1,4 @@
-package MobilePhone.Module_3_Abstract;
+package Module_3_Abstract;
 
 /**
  * 创建一个套餐的抽象类，把语音套餐和流量套餐中相同的特征和行为组成在一起

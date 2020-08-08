@@ -1,4 +1,4 @@
-package MobilePhone.Module_2_CardTypeEnum;
+package Module_2_CardTypeEnum;
 
 /**
  * 设计和实现以下枚举类 手机卡的类型总共有 3 种：普卡、小卡、微型卡;

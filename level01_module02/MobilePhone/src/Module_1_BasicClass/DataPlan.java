@@ -1,4 +1,4 @@
-package MobilePhone.Module_1_BasicClass;
+package Module_1_BasicClass;
 
 /**
  * 上网套餐类 

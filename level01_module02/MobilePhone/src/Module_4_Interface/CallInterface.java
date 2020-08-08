@@ -1,6 +1,6 @@
-package MobilePhone.Module_4_Interface;
+package Module_4_Interface;
 
-import MobilePhone.Module_1_BasicClass.User;
+import Module_1_BasicClass.User;
 
 /**
  * 通话服务接口 抽象方法: 参数1: 通话分钟, 参数2: 手机卡类对象 让通话套餐类实现通话服务接口;

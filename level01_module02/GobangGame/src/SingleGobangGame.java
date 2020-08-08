@@ -1,31 +1,68 @@
-package GobangBoard;
-
 import java.util.Random;
 import java.util.Scanner;
 
 /**
- * SingleGobangGame.java
+ * SingleGobangGame 独立的五子棋游戏类
+ * 创建 16x16 的五子棋盘，实现基础的五子棋游戏功能
+ * 额外优化：优化坐标位置输入后自动识别大小写和横纵坐标，提供横纵方向落子警示功能，提供多轮游戏功能
  */
 public class SingleGobangGame {
 
+
     /**
-     * 记录游戏中部分信息
+     * 玩家 1 的姓名
      */
     static String name1; // 玩家1姓名
+    /**
+     * 玩家 2 的姓名
+     */
     static String name2; // 玩家2姓名
+    /**
+     * 玩家 1 的 id
+     */
     static int id1; // 玩家1 ID
+    /**
+     * 玩家 2 的 id
+     */
     static int id2; // 玩家2 ID
+    /**
+     * 记录玩家 1 在单局内的落子次数
+     */
     static int count1 = 0; // 玩家1落子次数
+    /**
+     * 记录玩家 2 在单局内的落子次数
+     */
     static int count2 = 0; // 玩家2落子次数
+    /**
+     * 记录玩家 1 总获胜次数
+     */
     static int winTimes1 = 0; // 玩家1获胜次数
+    /**
+     * 记录玩家 2 总获胜次数
+     */
     static int winTimes2 = 0; // 玩家2获胜次数
 
 
+    /**
+     * 记录玩家落子时的「字母坐标」
+     */
     static String x; // 记录玩家落子的 x 字母坐标
+    /**
+     * 记录玩家落子时「字母坐标」对应的数组下标
+     */
     static int xNum; // 记录玩家落子的 x 数字坐标
+    /**
+     * 记录玩家落子时的「数字坐标」，同时也是数组的下标
+     */
     static int yNum; // 记录玩家落子的 y 数字坐标
 
+    /**
+     * 用于记录玩家是否开启「提醒功能」
+     */
     static String warningFunc; // 记录是否开启连子提示功能
+    /**
+     * 用于记录五子棋盘信息的二维数组
+     */
     static int[][] boardMap = new int[17][17]; // 用于记录棋盘信息的二维数组
 
     /**
@@ -49,6 +86,8 @@ public class SingleGobangGame {
 
 
     /**
+     * 把二维数组用棋盘的方式打印出来
+     *
      * @param boardMap      记录棋盘信息的二维数组
      * @param fullFullRound 记录游戏局数
      */
@@ -87,7 +126,7 @@ public class SingleGobangGame {
      * 用于执行落子操作的动作
      *
      * @param boardMap 记录棋盘信息的二维数组
-     * @param id 记录玩家 id
+     * @param id       记录玩家 id
      */
     public static void move(int[][] boardMap, int id) {
 
@@ -176,7 +215,7 @@ public class SingleGobangGame {
      * @param id          代表玩家的 id 和 棋子
      * @param xNum        落子位置的坐标
      * @param yNum        落子位置的坐标
-     * @return boolean  通过返回 true 或 false 判定是否有玩家获胜
+     * @return boolean 通过返回 true 或 false 判定是否有玩家获胜
      */
     public static boolean checkWin(int[][] boardMap, String warningFunc, int id, int xNum, int yNum) {
         int c = 0; // 创建一个变量 c 用来记录连子数
@@ -342,11 +381,15 @@ public class SingleGobangGame {
     }
 
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         boolean choice; // 用来接收用户选择开始新游戏或者退出游戏的选择
         int fullFullRound = 0; // 统计局数
 
-        // 调用 Player 类创建两个 Player 对象，同时给对象分别进行赋值，分别代表两个玩家
         Scanner sc = new Scanner(System.in); // 创建扫描器接收用户输入信息
 
         System.out.print("玩家 1 请输入姓名："); // 提示玩家输入姓名

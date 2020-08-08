@@ -1,10 +1,8 @@
-package MobilePhone;
-
-import MobilePhone.Module_1_BasicClass.User;
-import MobilePhone.Module_4_Interface.CallInterface;
-import MobilePhone.Module_4_Interface.CallInterfaceUse;
-import MobilePhone.Module_4_Interface.DataInterface;
-import MobilePhone.Module_4_Interface.DataInterfaceUse;
+import Module_1_BasicClass.User;
+import Module_4_Interface.CallInterface;
+import Module_4_Interface.CallInterfaceUse;
+import Module_4_Interface.DataInterface;
+import Module_4_Interface.DataInterfaceUse;
 
 import java.util.Scanner;
 
@@ -16,6 +14,11 @@ import java.util.Scanner;
  */
 public class Test {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

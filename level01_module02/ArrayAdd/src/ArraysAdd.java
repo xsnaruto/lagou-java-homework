@@ -1,5 +1,3 @@
-package ArraysAdd;
-
 import java.util.Random;
 
 /**

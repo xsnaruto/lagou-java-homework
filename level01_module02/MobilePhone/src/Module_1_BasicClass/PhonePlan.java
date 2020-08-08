@@ -1,4 +1,4 @@
-package MobilePhone.Module_1_BasicClass;
+package Module_1_BasicClass;
 
 /**
  * 通话套餐类 特征：通话时长、短信条数、每月资费 行为: 显示所有套餐信息;

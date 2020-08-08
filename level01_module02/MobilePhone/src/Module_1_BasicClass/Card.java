@@ -1,6 +1,6 @@
-package MobilePhone.Module_1_BasicClass;
+package Module_1_BasicClass;
 
-import MobilePhone.Module_2_CardTypeEnum.CardTypeEnum;
+import Module_2_CardTypeEnum.CardTypeEnum;
 
 /**
  * 卡类型、卡号、用户名、密码、账户余额、通话时长(分钟)、上网流量 行为：显示（卡号 + 用户名 + 当前余额）

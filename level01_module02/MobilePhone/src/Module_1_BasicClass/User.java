@@ -1,6 +1,4 @@
-package MobilePhone.Module_1_BasicClass;
-
-import MobilePhone.Module_2_CardTypeEnum.CardTypeEnum;
+package Module_1_BasicClass;
 
 /**
  * 用户消费信息类 特征：统计通话、短信、流量信息，以及每月消费金额

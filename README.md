@@ -4,9 +4,9 @@
 
 -----
 
-1. 二维数组创建和累加操作 [ArrayAdd](ArrayAdd/src)
-2. 通过二维数组实现五子棋游戏 [GobangGame](GobangGame/src)
-3. 利用继承、多态、抽象、接口等方法模拟通信计费和展示系统 [MobilePhone](MobilePhone/src)
+1. 二维数组创建和累加操作 [ArrayAdd](ArrayAdd)
+2. 通过二维数组实现五子棋游戏 [GobangGame](GobangGame)
+3. 利用继承、多态、抽象、接口等方法模拟通信计费和展示系统 [MobilePhone](MobilePhone)
 
 -----
 

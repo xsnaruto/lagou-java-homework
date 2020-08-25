@@ -1,5 +1,9 @@
 # 个人拉勾 JAVA 课程作业和笔记
 
+## 课程笔记（Mindmap)
+* [iThoughtsX 格式](lagou-java-notes.itmz)
+* [XMind 格式](lagou-java-notes.xmind)
+
 ## 课程作业目录结构  
 1. 第一阶段：JavaSE
     1. 模块一：[Java 语言基础](https://github.com/xsnaruto/lagou-java-homework/tree/阶段01_模块01_Java语言基础)

@@ -11,6 +11,6 @@
 -----
 
 作业解说录屏文件：
-* [奶牛快传](https://cowtransfer.com/s/5be19aec62144f)
-* [iCloud Drive](https://www.icloud.com/iclouddrive/0E3EGefEWDUuzEvMLdt74STUg#Module_02)
+* [~~奶牛快传~~](https://cowtransfer.com/s/5be19aec62144f)
+* [~~iCloud Drive~~](https://www.icloud.com/iclouddrive/0E3EGefEWDUuzEvMLdt74STUg#Module_02)
 * [Google Drive](https://drive.google.com/file/d/10Q4o0CpULAr7Efr7B-ivuR3vePNu57wI/view?usp=sharing)

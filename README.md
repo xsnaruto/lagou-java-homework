@@ -1,21 +1,18 @@
 # 个人拉勾 JAVA 课程作业和笔记
 
-## 课程作业目录结构  
-1. 第一阶段：JavaSE
-    1. 模块一：[Java 语言基础](/level01_module01/src)
-    2. 模块二：[Java 面向对象编程](/level01_module02/)
-    3. 模块三：[Java 核心类库（上）](/level01_module03/)
-    4. 模块四：[Java 核心类库（下）](/level01_module04/)
-    5. 模块五：[Java 新特性和项目](/level01_module05/)
+第一阶段：JavaSE / 模块三：Java 核心类库（上）
 
-2. 第二阶段：数据库技术
-	1. 模块一：MySQL 数据库
-	2. 模块二：JDBC 技术和 XML
+---
 
-3. 第三阶段：前端技术
-	1. 模块一：前端基础
-	2. 模块二：前端进阶
+1. 统计字符串内信息 [Exam_01](Exam_01)
+2. 获取两个指定字符串中的最大相同子串 [Exam_02](Exam_02)
+3. 使用 HashMap 集合统计字符串信息 [Exam_03](Exam_03)
+4. 使用 List 集合实现简易的学生信息管理系统 [Exam_03](Exam_04)
+5. 使用集合实现斗地主游戏的部分功能 [Exam_03](Exam_05)
 
-4. 第四阶段：Java Web 核心
-    1. 模块一：Java Web 核心（上）
-    2. 模块二：Java Web 核心（下）
+---
+
+作业解说录屏文件：
+
+- [奶牛快传](https://cowtransfer.com/s/80a1182d11bc4b)
+- [Google Drive](https://drive.google.com/file/d/10ig6ZFvTNLWvje4i0artjbuC0nmJ2bbk/view?usp=sharing)

@@ -1,9 +1,0 @@
-# macOS 文件夹自动生成文件
-.DS_Store
-
-# git 自定义忽略内容列表
-.gitignore
-
-# IntelliJ Idea 项目自动生成文件
-.idea
-out
